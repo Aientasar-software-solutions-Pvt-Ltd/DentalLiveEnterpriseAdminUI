@@ -96,49 +96,40 @@
       <button  class="navbar-toggler collapsed" data-bs-target="#collapsibleNavbar" data-bs-toggle="collapse" type="button" aria-expanded="false">
               <span  class="navbar-toggler-icon"><i  class="fa fa-bars"></i></span>
           </button>
-          <div  class="navbar-collapse collapse" id="collapsibleNavbar" >
-              <ul  class="navbar-nav ms-auto my-2 my-md-0">
-              <li class="nav-item dropdown" >
-                  <a aria-expanded="true"  data-bs-toggle="dropdown"  id="navbarDropdownMenuLink" role="button" class="nav-link align-items-center d-flex  p-0">                
-                    <img alt="..." src="assets/tesimonial-2.png" class="avatar avatar-xs rounded-circle" style="border: 1px dotted #00D9CC;">
-                  <label  class="nav-link body2 pe-0"  style="color:#282C33">Hi,Emma Addison</label>
-                </a>
-              </li>
-              </ul>
-              <div class="dropdown-divider"></div>
+          <div  class="navbar-collapse collapse" id="collapsibleNavbar" >   
               <ul  class="navbar-nav d-md-none me-auto mb-2 mb-md-0">
-                <li  class="nav-item"><a  class="nav-link body2"  href="Dashboard.html" style="color:#282C33">Dashboard</a></li>
-                <li  class="nav-item"><a  class="nav-link body2"   href="AccountDetail.html" style="color:#282C33">Account Settings</a></li>
-                <li  class="nav-item"><a  class="nav-link body2"  href="LocationList.html" style="color:#282C33">Location</a></li>
-                <li  class="nav-item"><a  class="nav-link body2"   href="login.html" style="color:#282C33">Logout</a></li>
-                     </ul>
+              <li  class="nav-item"><a  class="nav-link body2"   href="AccountDetail.html" style="color:#282C33">Account Settings</a></li>
+              <li  class="nav-item"><a  class="nav-link body2"  href="LocationList.html" style="color:#282C33">Location</a></li>
+              <li  class="nav-item"><a  class="nav-link body2"   href="login.html" style="color:#282C33">Logout</a></li>
+               </ul>
           </div>
       </div>
   </nav>
     <div  class="row">
        <div class=" l-navbar d-none d-md-block col-md-3 col-lg-2 min-vh-100 ">
         <div class="" id="nav-bar">
-        <nav class="nav" style="padding-left:0.5rem;">
-            <div class="nav_list" >
-              <a href="Dashboard.html" class="nav_link border-0 active_view active" ><i class='bx bx-tachometer nav_icon' ></i><span class="nav_name">DashBoard</span></a>
-        </nav>
-          <nav class="nav mt-2">
+          <nav class="nav">
             <div class="nav_list" >
               <div id="nav_accordion">
-              <a href="AccountDetail.html" class="nav_link"> <i class='bx bx-cog nav_icon'></i> <span class="nav_name">Account Settings </span> </a>
+              <a href="AccountDetail.html" class="nav_link"> <i class='bx bx-cog nav_icon'></i> <span class="nav_name">My Account </span> </a>
               <a href="LocationList.html" class="nav_link " > <i class='bx bx-current-location nav_icon'></i> <span class="nav_name">Location</span> </a>
               <a href="login.html" class="nav_link "> <i class='bx bx-right-arrow-circle nav_icon'></i><span class="nav_name">Logout</span> </a>
-  
         </div>
         </nav>
-        
-      
          </div>
        </div>
    
      <div class="col-md-9 col-lg-10 p-4 mx-auto">
+      <ol class="breadcrumb">
+        <!-- breadcrumb --> 
+        <li class="breadcrumb-item">
+          <a href="AccountDetail.html" style="color: #AEB4BF;"> <i class="fa fa-gear" style="color: #00D9CC;" aria-hidden="true"></i>
+            Account Profile </a>
+        </li>
+       
+       </ol>
           <div class="page-header d-flex">
-            <ol class="breadcrumb">
+            <ol class="breadcrumb mb-0">
               <!-- breadcrumb --> 
               <li class="breadcrumb-item">
                 <h5 class="fw-bold" style="color: #011A3E;">Account Profile</h5>
@@ -170,54 +161,37 @@
                                 <div class="row mt-2">
                                   <div class="col-md-12">
                                     <div class="row">
-                                    <div class="col-md-6"> 
-                                      <div class="mb-4">
-                                        <label class="form-label body2" style="color: #011A3E;">Enterprise Name </label>
-                                        <input type="text" class="form-control" [(ngmodel)]="Account.enterpriseName" name="enterpriseName">
+                                      <div class="col-md-6"> 
+                                        <div class="mb-4">
+                                          <p class="form-label body2" style="color: #011A3E;">Enterprise Name   : <span>Clinic oprations </span></p>
+                                        </div>
+                                        <div class="mb-4">
+                                          <p class="form-label body2" style="color: #011A3E;">Contact Name : 
+                                            <span>  Simon Sais</span></p>
+                                           </div>
+                                        <div class="mb-4">
+                                          <p class="form-label body2" style="color: #011A3E;">Email Id  : <span>simon.sais@gmail.com </span></p>
+                                        </div>
+                                        <div class="mb-4">
+                                          <p class="form-label body2" style="color: #011A3E;">Phone Number : <span> +21 52541 </span></p>
+                                        </div>
+                                        <div class="mb-4">
+                                          <p class="form-label body2" style="color: #011A3E;">Account Number : <span>52541 5824 </span></p>
+                                        </div>
                                       </div>
-                                      <div class="mb-4">
-                                        <label class="form-label body2" style="color: #011A3E;">Contact Name </label>
-                                        <input type="text" class="form-control" [(ngmodel)]="Account.contactName" name="contactName">
-                                      </div>
-                                    </div>
-                                    <div class="col-md-6   text-center">
+                                    <div class="col-md-6 ">
                                       <div class="profile-img justify-content-center  p-md-2">
-                                        <div class="capture">
-                                        <img src="assets/avatar3.png" alt="" class="mb-2"></div>
-                                        <a class="body2" href="#" style="color:#0070D2;">Remove Logo</a>
+                                        <div>
+                                        <img src="assets/avatar3.png" alt="" class="mb-2"></div> 
+                                       
                                     </div>
                                     </div>
-                                  
-                                  
-                                    <div class="col-md-6"> 
-                                      <div class="mb-4">
-                                        <label class="form-label body2" style="color: #011A3E;">Phone Number </label>
-                                        <input type="number" class="form-control" [(ngmodel)]="Account.phoneNumber" name="phoneNumber">
-                                      </div>
-                                    </div>
-                                  
-                                    <div class="col-md-6"> 
-                                      <div class="mb-4">
-                                        <label class="form-label body2" style="color: #011A3E;">Email Id</label>
-                                        <input type="email" class="form-control" [(ngmodel)]="Account.emailId" name="emailId">
-                                      </div>
-                                    </div>
-                                    <div class="col-md-6"> 
-                                      <div class="mb-4">
-                                        <label class="form-label body2" style="color: #011A3E;">Account Number</label>
-                                        <input type="text" class="form-control" [(ngmodel)]="Account.accountNumber" name="accountNumber">
-                                      </div>
-                                    </div>
-              
-                                   
                                   </div>
-                                
                                   </div>
-                                 
                                 </div>
                               </div>
                             </div>
-                          <div class="card border-0" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
+                          <div class="card border-0 mt-4" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
                               <div class="card-header card-header_border " style="background-color:#ffff;">
                                 <p class="body1 card-title mt-2" style="color: #354053;">Secondary Contact </p>
                                 </div>
@@ -225,49 +199,36 @@
                                   <div class="row mt-2">
                                     <div class="col-md-12">
                                       <div class="row">
-                                      <div class="col-md-6"> 
-                                        <div class="mb-4">
-                                          <label class="form-label body2" style="color: #011A3E;">First Name </label>
-                                          <input type="text" class="form-control" [(ngmodel)]="Secondary.firstName" name="firstName">
+                                        <div class="col-md-6"> 
+                                          <div class="mb-4">
+                                            <p class="form-label body2" style="color: #011A3E;">First Name   : <span>Clinic oprations </span></p>
+                                          </div>
+                                          <div class="mb-4">
+                                            <p class="form-label body2" style="color: #011A3E;">Last Name : 
+                                              <span>  Simon Sais</span></p>
+                                             </div>
+                                          <div class="mb-4">
+                                            <p class="form-label body2" style="color: #011A3E;">Email Id  : <span>simon.sais@gmail.com </span></p>
+                                          </div>
+                                          <div class="mb-4">
+                                            <p class="form-label body2" style="color: #011A3E;">Phone Number : <span> +21 52541 </span></p>
+                                          </div>
+                                         
                                         </div>
-                                        <div class="mb-4">
-                                          <label class="form-label body2" style="color: #011A3E;">Last Name </label>
-                                          <input type="text" class="form-control" [(ngmodel)]="Secondary.lastName" name="lastName">
-                                        </div>
-                                      </div>
-                                      <div class="col-md-6   text-center">
+                                      <div class="col-md-6 ">
                                         <div class="profile-img justify-content-center  p-md-2">
-                                          <div class="capture">
-                                          <img src="assets/avatar3.png" alt="" class="mb-2"></div>
-                                          <a class="body2" href="#" style="color:#0070D2;">Remove picture</a>
+                                          <div>
+                                          <img src="assets/avatar3.png" alt="" class="mb-2"></div> 
+                                         
                                       </div>
                                       </div>
-                                    
-                                    
-                                      <div class="col-md-6"> 
-                                        <div class="mb-4">
-                                          <label class="form-label body2" style="color: #011A3E;">Phone Number </label>
-                                          <input type="text" class="form-control" [(ngmodel)]="Secondary.phoneNumber" name="phoneNumber">
-                                        </div>
-                                      </div>
-                                   
-                                      <div class="col-md-6"> 
-                                        <div class="mb-4">
-                                          <label class="form-label body2" style="color: #011A3E;">Email Id</label>
-                                          <input type="email" class="form-control" [(ngmodel)]="Secondary.emailId" name="emailId">
-                                        </div>
-                                      </div>
-                                     
-                
-                                     
                                     </div>
-                                 
                                     </div>
                                    
                                   </div>
                                 </div>
                               </div>
-                          <div class="card border-0" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
+                          <div class="card border-0 mt-4" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);">
                                 <div class="card-header card-header_border " style="background-color:#ffff;">
                                   <p class="body1 card-title mt-2" style="color: #354053;">Assign package</p>
                                   </div>
@@ -276,11 +237,9 @@
                                       <div class="col-md-12">
                                         <div class="row">
                                           <div class="col-md-10">
-                                          
-                                            <label class="form-label body2 " style="color: #011A3E;">Select Products</label>
-                                            <div class="mb-4 mt-3">
+                                            <label class="form-label body2 " style="color: #011A3E;">Products</label>
+                                            <div class="mb-4 mt-1">
                                             <div class="col-md-12">
-                                            
                                               <div class="form-check form-check-inline">
                                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                                                 <label class="form-check-label" for="inlineCheckbox1"> Dental Live Mail</label>
@@ -296,53 +255,34 @@
                                             </div>
                                           </div>
                                         </div>
-                                        <div class="col-md-4"> 
-                                          <div class="mb-4">
-                                            <label class="form-label body2" style="color: #011A3E;">Min Users </label>
-                                            <input type="number" class="form-control" [(ngmodel)]="Assignpackage.minUsers" name="minUsers">
-                                          </div>
+                                        <div class="col-md-4">
+                                          <div class="md-4">
+                                            <p class="form-label body2" style="color: #011A3E;">Min Users : <span>456 </span></p>
+                                          </div> 
                                         </div>
-                                        <div class="col-md-4"> 
-                                          <div class="mb-4">
-                                            <label class="form-label body2" style="color: #011A3E;">Price Per User </label>
-                                            <input type="number" class="form-control" [(ngmodel)]="Assignpackage.pricePeruser" name="pricePeruser">
-                                          </div>
+                                        <div class="col-md-4">
+                                          <div class="md-4">
+                                            <p class="form-label body2" style="color: #011A3E;">Price Per User : <span> 56 $ </span></p>
+                                          </div> 
                                         </div>
-                                        <div class="col-md-4"> 
-                                          <div class="mb-4">
-                                            <label class="form-label body2" style="color: #011A3E;">Interval </label>
-                                            <input type="number" class="form-control" [(ngmodel)]="Assignpackage.interval" name="interval">
-                                          </div>
+                                        <div class="col-md-4">
+                                          <div class="md-4">
+                                            <p class="form-label body2" style="color: #011A3E;">Interval : <span> 2 </span></p>
+                                          </div> 
                                         </div>
-                                        <div class="col-md-4"> 
-                                          <div class="mb-4">
-                                            <label class="form-label body2" style="color: #011A3E;">Effective Price </label>
-                                            <input type="number" class="form-control" [(ngmodel)]="Assignpackage.effectivePrice" name="effectivePrice">
-                                          </div>
+                                        <div class="col-md-4">
+                                          <div class="md-4">
+                                            <p class="form-label body2" style="color: #011A3E;">Effective Price : <span> 82 $ </span></p>
+                                          </div> 
                                         </div>
-                                        <div class="col-md-6"> 
-                                          <div class="mb-4">
-                                            <label class="form-label body2" style="color: #011A3E;">Billing Address </label>
-                                            <input type="text" class="form-control" [(ngmodel)]="Assignpackage.billingAddress" name="billingAddress">
-                                          </div>
+                                        <div class="col-md-4">
+                                          <div class="md-4">
+                                            <p class="form-label body2" style="color: #011A3E;">Billing Address : <span> Toronto 52845 </span></p>
+                                          </div> 
                                         </div>
-                
-                                      </div>
-                                      <div class="row mt-2">
                                         
-                                        <div class="col-md-12 mt-2">
-                                          <a href="#" class="btn btn-primary btn-1  mb-2 me-2 border-0" style="box-shadow: 0px 4px 20px #C3D2FF;background: #0070D2;height:40px;padding:10px 31px;"> 
-                                            Add
-                                         </a> 
-                                         <a href="#" class="btn btn-primary btn-1  mb-2  me-2 border-0" style="box-shadow: 0px 4px 20px #C3D2FF;background: #0070D2;height:40px;padding:10px 31px;"> 
-                                          Update
-                                       </a>        
-                                        <a href="#" class="btn btn-outline-primary  btn-1 mb-2 " style="height:40px;padding:10px 31px;box-shadow: 0px 4px 20px #c3d2ff00;color:#0070D2;border: 1px solid #0070D2;">
-                                         Delete
-                                        </a>
-                                         
-                                        </div>
                                       </div>
+                             
                                       </div>
                                      
                                     </div>
@@ -381,14 +321,12 @@
                                   </div>
         
                               </div>
-                              <div class="row mt-2">
-                                <div class="col-md-12 mt-2">
+                              <div class="row ">
+                                <div class="col-md-12 ">
                                   <a href="#" class="btn btn-primary btn-1  mb-2 me-2 border-0" style="box-shadow: 0px 4px 20px #C3D2FF;background: #0070D2;height:40px;padding:10px 31px;"> 
                                     Update
                                  </a> 
-                                <a href="#" class="btn btn-outline-primary  btn-1 mb-2 " style="height:40px;padding:10px 31px;box-shadow: 0px 4px 20px #c3d2ff00;color:#0070D2;border: 1px solid #0070D2;">
-                                  Cancel
-                                </a>
+                             
                                 </div>
                               </div>
                               </div>
